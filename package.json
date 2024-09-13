@@ -1,0 +1,27 @@
+{
+  "name": "festival-de-musica",
+  "version": "1.0.0",
+  "description": "Haciendo una página web estática con HTML, Gulp y Sass.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HzHaxx/Festival-de-Musica.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Miguel Zapata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HzHaxx/Festival-de-Musica/issues"
+  },
+  "homepage": "https://github.com/HzHaxx/Festival-de-Musica#readme",
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
+}
