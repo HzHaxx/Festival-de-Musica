@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
+  navegacionFija();
   crearGaleria();
 });
+
+function navegacionFija() {
+  const header = document.querySelector('.header');
+  const sobreFestival = document.querySelector('.sobre-festival');
+
+  document.addEventListener('scroll', function () {
+    if (sobreFestival.getBoundingClientRect().bottom < 1) {
+      header.classList.add('fixed');
+    } else {
+      header.classList.remove('fixed');
+    }
+  });
+}
 
 function crearGaleria() {
   const CANTIDAD_IMAGENES = 16;
@@ -29,7 +43,15 @@ function mostrarImagen(i) {
   const modal = document.createElement('DIV');
   modal.classList.add('modal');
   modal.onclick = cerrarModal;
+
+  // Botón cerrar modal
+  const cerrarModal = document.createElement('BUTTON');
+  cerrarModalBtn.textContent = 'X'; 
+  cerrarModalBtn.classList.add('btn-cerrar');
+  modal.onclick = cerrarModal;
+
   modal.appendChild(imagen);
+  modal.appendChild(cerrarModalBtn);
 
   // Agregar al HTML
   const body = document.querySelector('body');
