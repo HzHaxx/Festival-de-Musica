@@ -53,7 +53,7 @@ function mostrarImagen(i) {
   modal.onclick = cerrarModal;
 
   // Botón cerrar modal
-  const cerrarModal = document.createElement('BUTTON');
+  const cerrarModalBtn = document.createElement('BUTTON');
   cerrarModalBtn.textContent = 'X';
   cerrarModalBtn.classList.add('btn-cerrar');
   modal.onclick = cerrarModal;
@@ -72,7 +72,7 @@ function cerrarModal() {
   modal.classList.add('fade-out');
 
   setTimeout(() => {
-    modal.remove();
+    modal?.remove();
 
     const body = document.querySelector('body');
     body.classList.remove('overflow-hidden');
