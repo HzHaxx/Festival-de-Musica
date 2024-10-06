@@ -23,7 +23,7 @@
 }
 
 .escenario {
-    padding: 2rem;
+    padding-top: 2rem;
 
     .nombre-escenario {
         font-size: 3rem;
@@ -46,7 +46,7 @@
     }
 }
 
-.bg-amarrillo {
+.bg-amarillo {
     background-color: v.$amarillo;
 
     li:nth-child(odd) {
