@@ -37,7 +37,7 @@ Para preparar tu entorno de desarrollo, asegúrate de tener instalados **Node.js
 
 Para compilar SCSS, optimizar imágenes y minificar JavaScript, usa:
 ```bash
-gulp dev
+npm run dev
 ```
 
 ## 🔧 Tecnologías utilizadas
