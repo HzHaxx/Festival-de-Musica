@@ -1,57 +1,44 @@
-# 🎤 Proyecto Festival de Música 🎉
+# 🎤 Festival de Música 🎉
 
-En este proyecto creamos una página para un festival de música. Tenemos una sección sobre información general, una con los lineups y, por último, los dos posibles boletos a comprar.
-
-Este proyecto es un sitio web construido con **HTML**, **CSS** y **JavaScript**, y automatizado con la herramienta de construcción **Gulp**. Este archivo README proporciona información sobre cómo usar el proyecto y cómo se estructura el código fuente.
+¡Bienvenido al proyecto del Festival de Música! Este sitio web te permitirá organizar y disfrutar de un increíble festival de música, con secciones de información general, lineups y opciones de boletos.
 
 ## 📋 Requisitos
 
-Para ejecutar este proyecto en un entorno de desarrollo local, debes tener instalado **Node.js** y **Gulp** en tu computadora.
+Para preparar tu entorno de desarrollo, asegúrate de tener instalados **Node.js** y **Gulp**.
 
-## ⚙️ Instalación
+## 🚀 Instalación
 
-1. Clonar el repositorio:
+1. Clona este repositorio:
     ```bash
     git clone https://github.com/usuario/repo.git
     ```
-2. Instalar las dependencias:
+2. Instala las dependencias necesarias:
     ```bash
     npm install
     ```
 
-## 🗂️ Estructura del Proyecto
+## 🏗️ Estructura del Proyecto
 
-- `src/` - Contiene los archivos fuente del proyecto, incluyendo HTML, SCSS y JavaScript.
-- `build/` - Contiene los archivos generados y optimizados del proyecto para producción.
-- `gulpfile.js` - Define las tareas de Gulp para construir y automatizar el proyecto.
-- `package.json` - Define las dependencias del proyecto y los scripts de construcción y ejecución.
+- `src/` - Archivos fuente, incluidos HTML, SCSS y JavaScript.
+- `build/` - Archivos generados y optimizados para producción.
+- `gulpfile.js` - Tareas de Gulp para automatizar el proceso de construcción.
+- `package.json` - Dependencias y scripts del proyecto.
 
 ## 📋 Tareas de Gulp
 
-### 🎨 css
-Compila los archivos SCSS del proyecto y los convierte en archivos CSS. Los archivos CSS resultantes se almacenan en la carpeta `build/css`.
+- **🎨 css:** Compilación de SCSS a CSS, almacenado en `build/css`.
+- **📷 imagenes:** Optimización de imágenes PNG y JPG, guardadas en `build/img`.
+- **🌐 versionWebp:** Conversión de imágenes a formato WebP, guardadas en `build/img`.
+- **🖼️ versionAvif:** Conversión de imágenes a formato AVIF, guardadas en `build/img`.
+- **🚀 javascript:** Minificación y optimización de JavaScript, guardado en `build/js`.
+- **🔄 dev:** Ejecuta tareas en paralelo y observa cambios para recompilación automática.
 
-### 📷 imagenes
-Optimiza las imágenes PNG y JPG del proyecto, almacena los archivos optimizados en la carpeta `build/img`.
+## 🛠️ Uso
 
-### 🌐 versionWebp
-Convierte las imágenes PNG y JPG del proyecto en formato WebP, almacena los archivos resultantes en la carpeta `build/img`.
-
-### 🖼️ versionAvif
-Convierte las imágenes PNG y JPG del proyecto en formato AVIF, almacena los archivos resultantes en la carpeta `build/img`.
-
-### 🚀 javascript
-Minifica y optimiza los archivos JavaScript del proyecto, almacena los archivos resultantes en la carpeta `build/js`.
-
-### 🔄 dev
-Ejecuta las tareas `imagenes`, `versionWebp`, `versionAvif`, `javascript` y `css` en paralelo, y luego observa los cambios en los archivos fuente del proyecto para que se ejecute automáticamente la tarea correspondiente cada vez que se detecte un cambio.
-
-## ▶️ Uso
-Ejecuta el siguiente comando en la terminal para compilar los archivos SCSS, optimizar las imágenes y minificar el código JavaScript del proyecto:
+Para compilar SCSS, optimizar imágenes y minificar JavaScript, usa:
 ```bash
 gulp dev
 ```
-Abre el archivo `index.html` en tu navegador para ver la versión optimizada del sitio web.
 
 ## 🔧 Tecnologías utilizadas
 
